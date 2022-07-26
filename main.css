@@ -8,6 +8,135 @@
   --black: #191826;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-image: url("./assets/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 40px -290px;
+}
+
+header {
+  margin: 39.99px 24.15px;
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.45px;
+  color: var(--black);
+  margin: 24px;
+  max-width: 327px;
+}
+
+.main-p {
+  margin: 24px;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.premium-section {
+  color: var(--white);
+  background-color: var(--orange);
+  height: 546px;
+  /* width: 375px; */
+  border-radius: 12px;
+  padding: 48px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.premium-section__h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.premium-section__p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.premium-section__price {
+  display: flex;
+  align-items: center;
+}
+
+.premium-section__price--value {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 52px;
+  margin-right: 16px;
+}
+
+.premium-section__price--rate {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.ios-btn {
+  color: var(--white);
+  background-color: var(--black);
+  height: 61px;
+  width: 296px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.ios-btn:hover {
+  cursor: pointer;
+  background-color: var(--green);
+}
+
+.ios-btn img {
+  width: 17.08px;
+  height: 20px;
+  margin: 0 8px;
+}
+
+.ios-btn__text,
+.android-btn__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.android-btn {
+  color: var(--black);
+  background-color: var(--white);
+  height: 61px;
+  width: 296px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.android-btn:hover {
+  cursor: pointer;
+  background-color: var(--gold);
+}
+
+.android-btn img {
+  width: 16.7px;
+  height: 20px;
+  margin: 0 8px;
 }
