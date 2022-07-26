@@ -86,9 +86,8 @@ header {
   letter-spacing: -0.2px;
 }
 
-.ios-btn {
-  color: var(--white);
-  background-color: var(--black);
+.ios-btn,
+.android-btn {
   height: 61px;
   width: 296px;
   border: none;
@@ -97,6 +96,11 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+
+.ios-btn {
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .ios-btn:hover {
@@ -120,14 +124,6 @@ header {
 .android-btn {
   color: var(--black);
   background-color: var(--white);
-  height: 61px;
-  width: 296px;
-  border: none;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
 }
 
 .android-btn:hover {
@@ -139,4 +135,40 @@ header {
   width: 16.7px;
   height: 20px;
   margin: 0 8px;
+}
+
+.illustration {
+  display: block;
+  width: 208.95px;
+  margin: 48px auto;
+}
+
+footer {
+  margin: 64px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .logo {
+  width: 146.09px;
+  margin-bottom: 32px;
+}
+
+footer .footer-p {
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+footer .footer-p em {
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.footer-icons {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
 }
