@@ -89,7 +89,7 @@ header {
 .ios-btn,
 .android-btn {
   height: 61px;
-  width: 296px;
+  width: 100%;
   border: none;
   border-radius: 12px;
   display: flex;
@@ -171,4 +171,17 @@ footer .footer-p em {
   width: 100px;
   display: flex;
   justify-content: space-between;
+}
+
+.hero {
+  height: 600px;
+  width: 100%;
+  background-image: url("./assets/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-color: var(--black);
+  background-position: center 0px;
+  border-radius: 12px;
+  position: absolute;
+  top: 535px;
+  z-index: -999;
 }
