@@ -196,10 +196,14 @@ footer .footer-p em {
     background-size: 700px auto, 250px auto;
   }
 
-  main {
+  main,
+  header {
     width: 100%;
     max-width: 696px;
     margin: auto;
+  }
+  header img {
+    margin-top: 62px;
   }
 
   .main-heading {
@@ -272,7 +276,8 @@ footer .footer-p em {
 
 @media (min-width: 992px) {
   main,
-  footer {
+  footer,
+  header {
     width: 100%;
     max-width: 1110px;
     margin: auto;
@@ -284,7 +289,8 @@ footer .footer-p em {
     justify-content: space-between;
   }
 
-  footer img {
+  footer img,
+  header img {
     width: 146.09px;
     height: 32px;
   }
