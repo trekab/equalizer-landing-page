@@ -175,6 +175,10 @@ footer .footer-p em {
   justify-content: space-between;
 }
 
+.footer-icons img:hover{
+  cursor: pointer;
+}
+
 .hero {
   height: 600px;
   width: 100%;
