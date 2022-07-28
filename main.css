@@ -192,8 +192,8 @@ footer .footer-p em {
   body {
     background-image: url("./assets/bg-main-tablet.png"),
       url("./assets/bg-pattern-1.svg");
-    background-position: -200px -130px, right -20px;
-    background-size: 700px auto, 250px auto;
+    background-position: -40px -100px, right -20px;
+    background-size: 900px auto, 250px auto;
   }
 
   main,
@@ -275,6 +275,12 @@ footer .footer-p em {
 }
 
 @media (min-width: 992px) {
+  body {
+    background-image: url("./assets/bg-main-desktop.png"),
+      url("./assets/bg-pattern-1.svg");
+    background-position: -40px -220px, right -20px;
+    background-size: 1500px auto, 250px auto;
+  }
   main,
   footer,
   header {
