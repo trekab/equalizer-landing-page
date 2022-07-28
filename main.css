@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+:root {
+  --green: #66e2dc;
+  --orange: #fa7453;
+  --gold: #ffb964;
+  --white: #fcfaf9;
+  --black: #191826;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-image: url("./assets/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 40px -290px;
+}
+
+header {
+  margin: 39.99px 24.15px;
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.45px;
+  color: var(--black);
+  margin: 24px;
+  max-width: 327px;
+}
+
+.main-p {
+  margin: 24px;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 26px;
+  width: 327px;
+}
+
+.premium-section {
+  color: var(--white);
+  background-color: var(--orange);
+  height: 546px;
+  max-width: 375px;
+  border-radius: 12px;
+  padding: 48px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.premium-section__h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.premium-section__p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.premium-section__price {
+  display: flex;
+  align-items: center;
+}
+
+.premium-section__price--value {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 52px;
+  margin-right: 16px;
+}
+
+.premium-section__price--rate {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.ios-btn,
+.android-btn {
+  height: 61px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.ios-btn {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.ios-btn:hover {
+  cursor: pointer;
+  background-color: var(--green);
+}
+
+.ios-btn img {
+  width: 17.08px;
+  height: 20px;
+  margin: 0 8px;
+}
+
+.ios-btn__text,
+.android-btn__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.android-btn {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.android-btn:hover {
+  cursor: pointer;
+  background-color: var(--gold);
+}
+
+.android-btn img {
+  width: 16.7px;
+  height: 20px;
+  margin: 0 8px;
+}
+
+.illustration {
+  display: block;
+  width: 208.95px;
+  margin: 48px auto;
+}
+
+footer {
+  margin: 64px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .logo {
+  width: 146.09px;
+  margin-bottom: 32px;
+}
+
+footer .footer-p {
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+footer .footer-p em {
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.footer-icons {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-icons img:hover{
+  cursor: pointer;
+}
+
+.hero {
+  height: 600px;
+  width: 100%;
+  background-image: url("./assets/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-color: var(--black);
+  background-position: center 0px;
+  border-radius: 12px;
+  position: absolute;
+  top: 535px;
+  z-index: -999;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./assets/bg-main-tablet.png"),
+      url("./assets/bg-pattern-1.svg");
+    background-position: -40px -100px, right -20px;
+    background-size: 900px auto, 250px auto;
+  }
+
+  main,
+  header {
+    width: 100%;
+    max-width: 696px;
+    margin: auto;
+  }
+  header img {
+    margin-top: 62px;
+  }
+
+  .main-heading {
+    font-size: 64px;
+    line-height: 64px;
+    max-width: 520px;
+    margin-top: 95px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main-p {
+    font-size: 18px;
+    line-height: 28px;
+    width: 514px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .illustration {
+    width: 270.21px;
+    margin-left: 10%;
+    margin-top: 100px;
+  }
+
+  .hero {
+    margin-top: 200px;
+    height: 600px;
+    background-position: 218px -14px;
+    width: 100%;
+    max-width: 696px;
+  }
+
+  .premium-section {
+    width: 399px;
+    height: 546px;
+    position: relative;
+    top: -315px;
+    left: 36%;
+    margin: unset;
+  }
+
+  footer {
+    width: 100%;
+    max-width: 696px;
+    margin: auto;
+    margin-top: -200px;
+  }
+
+  .footer-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .footer-p {
+    max-width: 366px;
+    margin-bottom: 0;
+  }
+
+  .footer-icons {
+    max-width: 100px;
+  }
+
+  .footer-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-image: url("./assets/bg-main-desktop.png"),
+      url("./assets/bg-pattern-1.svg");
+    background-position: -40px -220px, right -20px;
+    background-size: 1500px auto, 250px auto;
+  }
+  main,
+  footer,
+  header {
+    width: 100%;
+    max-width: 1110px;
+    margin: auto;
+  }
+
+  footer {
+    margin-top: -200px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer img,
+  header img {
+    width: 146.09px;
+    height: 32px;
+  }
+
+  .footer-details {
+    width: 70%;
+  }
+
+  .main-heading {
+    max-width: 1015px;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .main-p {
+    font-size: 20px;
+    line-height: 34px;
+    width: 825px;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 1110px;
+    background-position: 377px -33px;
+    background-size: 275px auto;
+  }
+  .illustration {
+    width: 280px;
+    margin-left: 15%;
+    margin-top: 60px;
+  }
+  .premium-section {
+    width: 446px;
+    height: 625px;
+    left: 55%;
+    top: -335px;
+  }
+}
